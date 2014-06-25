@@ -1,0 +1,15 @@
+{
+    "reponame": "sample-masherybeatsmusic",
+    "title": "Mashery Beats Music",
+    "abbr": "MasheryBeats",
+    "tooltip": "A demo app that features the Beats Music API, part of the Mashery API Network",
+    "description": "This demo app provides a way to see the Beats Music API in action.",    
+    "articleUrl": "http://software.intel.com/html5/articles/integrating-apis-with-xdk-beats-music-sample-app",    
+    "highlights": ["App Framework", "Web Services API"],
+    "keywords": ["App Framework", "Web Services API"],
+    "relname": "4.0.0",
+    "visible": "false",
+    "appname": "demo.masherybeatsmusic",
+    "apppreview": "false"
+}
+
