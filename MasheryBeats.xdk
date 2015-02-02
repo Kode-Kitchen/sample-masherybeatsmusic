@@ -1,13 +1,13 @@
 {
   "project": {
-    "projectSettingsVersion": "1.1",
+    "projectSettingsVersion": "1.2",
     "creationData": {
       "type": "App Designer",
       "createDefaultBuildConfigs": true,
-      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+			"projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-masherybeatsmusic/sample.zip",
       "sourceDirectory": "www",
-      "projectGuid": "dc601569-b931-4e84-aab7-c132d80e38be",
+			"projectGuid": "00000000-0000-0000-0000-000000000000",
       "lastModifiedDate": 1407967279835,
       "creationDate": 1407964871319
     },
@@ -17,38 +17,8 @@
     "startFile": "index.html",
     "projectFiles": {},
     "projectDirectories": {},
-    "libraries": [
-      {
-        "name": "Cordova",
-        "version": "2.9.0",
-        "data": {
-          "default": true
-        }
-      },
-      {
-        "name": "intelXDK",
-        "version": "4.0.0",
-        "data": {
-          "default": true
-        }
-      }
-    ],
-    "cordovaPlugins": [
-      {
-        "id": "org.apache.cordova.device",
-        "version": "0.2.9",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {}
-      },
-      {
-        "id": "org.apache.cordova.splashscreen",
-        "version": "0.3.0",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {}
-      }
-    ],
+    "libraries": [],
+    "cordovaPlugins": [],
     "serviceMethods": [],
     "buildConfigurations": {
       "Android": {
@@ -67,13 +37,13 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "This demo app provides a way to see the Beats Music API in action.",
         "appVersionCode_": "1",
-        "appAuthor_": ""
+				"appAuthor_": "Intel XDK",
       },
       "Android-Crosswalk": {
         "platform_": "android",
@@ -91,8 +61,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Crosswalk with Cordova 3.x",
         "appDescription_": "This demo app provides a way to see the Beats Music API in action.",
@@ -113,8 +83,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "This demo app provides a way to see the Beats Music API in action."
@@ -132,8 +102,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
         "runtime_": "Cordova 3.x",
         "appDescription_": "This demo app provides a way to see the Beats Music API in action."
@@ -151,8 +121,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+				"cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "1.0.0.0",
         "runtime_": "Cordova 3.x"
       }
