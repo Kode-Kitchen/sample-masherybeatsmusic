@@ -1,5 +1,5 @@
 {
-    "reponame": "sample-masherybeatsmusic",
+    "repoName": "sample-masherybeatsmusic",
     "title": "Mashery Beats Music",
     "abbr": "MasheryBeats",
     "tooltip": "A demo app that features the Beats Music API, part of the Mashery API Network",
