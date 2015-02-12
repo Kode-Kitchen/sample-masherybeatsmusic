@@ -45,8 +45,7 @@
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "appDescription_": "This demo app provides a way to see the Beats Music API in action.",
-        "appVersionCode_": "1",
-	"appAuthor_": ""
+        "appVersionCode_": "1"
       },
       "Android-Crosswalk": {
         "platform_": "android",
