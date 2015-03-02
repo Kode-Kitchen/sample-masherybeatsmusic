@@ -49,18 +49,49 @@ form.urow { margin-bottom: 0px; }
 
    .w85 { width:85px; }
 */
-.vertical-col > *            { width:100%; }
-.vertical-col > .table-thing, .wrapping-col > .no_wrap.table-thing { width:100%; }
+.vertical-col > *,
+.vertical-col > .table-thing, .vertical-col > .afScrollPanel > .table-thing,
+.wrapping-col > .no_wrap.table-thing, .wrapping-col > .afScrollPanel > .no_wrap.table-thing {
+  width:100%;
+}
+
+#afui .vertical-col > .afScrollPanel > .widget,
+#afui .vertical-col > .widget,
+.vertical-col > .widget {
+  width: calc(100% ~'-' 10px);
+  margin-left: 5px;
+}
+
+.col > .vertical-col > .widget {
+  width: 100%;
+  margin-left: 0;
+}
+
 .table-thing{ display:table; }
 .wide-control{ display:table-cell; width:100% }
 .narrow-control{ display:table-cell;  }
 
 /* wrapping column */
-.wrapping-col.right  > * { float: right;  }  /* margin: 0 5px;   move margin to another class */
-.wrapping-col.left   > * { float: left;  }
-.vertical-col.right  > * { margin-left:auto; }
-.vertical-col.center > * { margin-left:auto; margin-right:auto; }
-.wrapping-col:not(.horiz-area) > .no_wrap {
+.wrapping-col.right  > *, .wrapping-col.right  > .afScrollPanel > * { float: right;  }  /* margin: 0 5px;   move margin to another class */
+.wrapping-col.left   > *, .wrapping-col.left   > .afScrollPanel > * { float: left;  }
+
+/* center and right alignment */
+.vertical-col.center { text-align:center; }
+.vertical-col.right  { text-align:right; }
+
+.vertical-col.right  > *, 
+.col > .vertical-col.right  > .widget,
+.vertical-col.right  > .afScrollPanel > * { 
+  margin-left:auto; 
+}
+.vertical-col.center > *, 
+.col > .vertical-col.center > .widget,
+.vertical-col.center > .afScrollPanel > * { 
+  margin-left:auto; 
+  margin-right:auto; 
+}
+.wrapping-col:not(.horiz-area) > .no_wrap,
+.wrapping-col:not(.horiz-area) > .afScrollPanel > .no_wrap {
   float: none;
   clear :both;
   /* margin: 8px 0px; */
@@ -86,25 +117,38 @@ form.urow { margin-bottom: 0px; }
 }
 
 /* page */
-.hidden { display:none; }
+.hidden:not(.afPopup) {
+  display: none;
+}
+
 .upage-content, .upage-outer {position:relative; }
 html, body  { height: 100%; }
 body:not(#afui) {
-  .uwrap, .upage, .upage-content { height: 100%; }
+  .upage, .upage-content { height: 100%; }
   .upage-outer { height: auto; }
 }
 
 /* position relative works fine. but fixed can be elected as well */
 /* .upage-content, .upage-outer { position: fixed; height:100%; } */
 
-.upage{ overflow-x: hidden; }
+.upage { overflow-x: hidden; }
 .upage-content { z-index:1; }
 #afui .upage { padding: 0; }
 
 /* sidebars and crossbars */
 
-.uib_sidebar  { position:absolute;  height:100%; top:0px; }
-.uib_crossbar { position:absolute;  width:100%;  left:0px; }
+.uib_sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0px;
+}
+
+.uib_crossbar {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+}
+
 .leftbar, .rightbar        {  z-index:2; }
 .reveal.leftbar  { left:0px;  z-index:0; }
 .reveal.rightbar { right:0px; z-index:0;}
@@ -116,6 +160,18 @@ body:not(#afui) {
 .botbar      { z-index:3; position:fixed; }
 .botbar.oh,
 .topbar.oh   { z-index:4; }
-.sidebar-content { position:relative; margin:0; }
+
+.sidebar-content {
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+  margin: 0;
+}
 
 .sidebar-thumb{ position:relative; margin:0; /* background-image:url('images/gripper.png'); */}
+
+//service method support
+.template { display:none !important; }
+
+//Absolute positioning
+.uib-absolute { position: absolute !important };

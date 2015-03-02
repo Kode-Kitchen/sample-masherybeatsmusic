@@ -1,6 +1,8 @@
 // ********************SET YOUR API KEY HERE**********************
 // Insert your Beats Music API Key here. See README for more info.
 var client_id = 'PLACE-YOUR-API-KEY-HERE';
+
+
 // ***************************************************************
 
 var invalidKey = false;
