@@ -1,20 +1,21 @@
 {
-   "appPreview" : "false",
-   "visible" : "true",
+   "appName" : "BeatsMashery",
    "tooltip" : "A demo app that features the Beats Music API, part of the Mashery API Network",
-   "articleUrl" : "https://software.intel.com/en-us/blogs/2014/07/08/integrating-apis-with-xdk-beatsmusic-sample-app",
+   "visible" : true,
+   "type" : "appdesigner",
+   "title" : "Mashery Beats Music",
+   "abbr" : "MasheryBeats",
+   "mobile" : false,
    "keywords" : [
       "Mashery",
       "App Framework",
       "Web Services API",
       "App Designer"
    ],
-   "abbr" : "MasheryBeats",
-   "repoName" : "sample-masherybeatsmusic",
+   "articleUrl" : "https://software.intel.com/en-us/blogs/2014/07/08/integrating-apis-with-xdk-beatsmusic-sample-app",
    "relName" : "4.0.0",
-   "type" : "appdesigner",
-   "appName" : "demo.masherybeatsmusic",
    "projectTypeName" : "com.intel.xdk.projecttype.webapp",
-   "title" : "Mashery Beats Music",
-   "description" : "This demo app provides a way to see the Beats Music API in action."
+   "appPreview" : false,
+   "description" : "This demo app provides a way to see the Beats Music API in action.",
+   "repoName" : "sample-masherybeatsmusic"
 }
