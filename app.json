@@ -14,7 +14,7 @@
    ],
    "articleUrl" : "https://software.intel.com/en-us/blogs/2014/07/08/integrating-apis-with-xdk-beatsmusic-sample-app",
    "relName" : "4.0.0",
-   "projectTypeName" : "com.intel.xdk.projecttype.webapp",
+   "projectTypeName" : "com.intel.xdk.projecttype.jsapp",
    "appPreview" : false,
    "description" : "This demo app provides a way to see the Beats Music API in action.",
    "repoName" : "sample-masherybeatsmusic"
