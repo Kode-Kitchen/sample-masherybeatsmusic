@@ -1,5 +1,5 @@
 {
-   "appName" : "demo.masherybeatsmusic",
+   "appName" : "BeatsMashery",
    "tooltip" : "A demo app that features the Beats Music API, part of the Mashery API Network",
    "visible" : true,
    "type" : "appdesigner",
