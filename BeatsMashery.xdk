@@ -19,7 +19,24 @@
         "cordovaPluginsDirectory": "plugins",
         "cordovaPlugins": [
             {
-                "id": "org.apache.cordova.splashscreen",
+                "id": "cordova-plugin-statusbar",
+                "name": "StatusBar",
+                "version": "?",
+                "originType": "cordova.io",
+                "origin": "cordova-plugin-statusbar",
+                "gitref": "",
+                "paramvals": {},
+                "selectedState": "Included",
+                "dependsOn": [],
+                "topLevel": true,
+                "cordovaVersion": "?",
+                "permissions": {},
+                "description": "Cordova StatusBar Plugin",
+                "data": {},
+                "dependedBy": []
+             },
+            {
+                "id": "cordova-plugin-splashscreen",
                 "version": "?",
                 "selectedState": "Included",
                 "data": {},
@@ -38,10 +55,10 @@
             }
         ],
         "buildConfigurations": {
-            "Android": {
+            "Android-Crosswalk": {
                 "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
+                "runtime_": "Crosswalk with Cordova 3.x",
+                "name_": "Android-Crosswalk",
                 "preferences_": {
                     "android-minSdkVersion": "14",
                     "android-targetSdkVersion": "19",
@@ -67,10 +84,10 @@
                 "appDescription_": "Sample app that demonstrates Beats Music API Integration",
                 "appVersionCode_": "1"
             },
-            "Android-Crosswalk": {
+            "Android": {
                 "platform_": "android",
-                "runtime_": "Crosswalk with Cordova 3.x",
-                "name_": "Android-Crosswalk",
+                "runtime_": "Cordova 3.x",
+                "name_": "Android",
                 "preferences_": {
                     "android-minSdkVersion": "14",
                     "android-targetSdkVersion": "19",
@@ -200,11 +217,15 @@
                 "isActive_": false,
                 "appName_": "BeatsMashery",
                 "appID_": "xdk.intel.blank.ad.template",
-                "appAccess_": [
-                    {
-                        "origin": "*"
-                    }
-                ],
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*",
+                        "http://developer.beatsmusic.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
