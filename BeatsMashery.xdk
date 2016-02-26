@@ -34,7 +34,7 @@
                 "description": "Cordova StatusBar Plugin",
                 "data": {},
                 "dependedBy": []
-             },
+            },
             {
                 "id": "cordova-plugin-splashscreen",
                 "version": "?",
@@ -69,13 +69,13 @@
             }
         ],
         "buildConfigurations": {
-            "Android-Crosswalk": {
+            "Android": {
                 "platform_": "android",
                 "runtime_": "Crosswalk with Cordova 3.x",
                 "name_": "Android-Crosswalk",
                 "preferences_": {
                     "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
+                    "android-targetSdkVersion": "23",
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
@@ -84,40 +84,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
-                        "https://debug-software.intel.com/*",
-                        "http://developer.beatsmusic.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appVersion_": "0.0.1",
-                "appAuthor_": "Intel XDK",
-                "appDescription_": "Sample app that demonstrates Beats Music API Integration",
-                "appVersionCode_": "1"
-            },
-            "Android": {
-                "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
-                "preferences_": {
-                    "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
-                    "android-installLocation": "auto"
-                },
-                "isActive_": true,
-                "appName_": "Mashery-Beats",
-                "appID_": "xdk.intel.xdk.beatsmashery",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
@@ -140,7 +107,7 @@
                 "runtime_": "Cordova 3.x",
                 "name_": "iOS",
                 "preferences_": {
-                    "ios-target": "6",
+                    "ios-target": "8.0",
                     "ios-configuration": "adhoc"
                 },
                 "isActive_": true,
@@ -149,7 +116,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
@@ -181,7 +148,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
@@ -209,7 +176,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
@@ -235,7 +202,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
@@ -261,7 +228,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
@@ -287,7 +254,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
@@ -313,7 +280,7 @@
                 "appAccess_": {
                     "mode": "legacy",
                     "network": [
-                        "http://debug-software.intel.com/*", 
+                        "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*",
                         "http://developer.beatsmusic.com/*"
                     ],
